@@ -11,7 +11,7 @@ class Lazyjira < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/textfuel/lazyjira/releases/download/v2.0.0/lazyjira_darwin_amd64.tar.gz"
-      sha256 "e8e8ae32feb698fae160c133192a716499d5e53a6eea919f7393ee072418c7c3"
+      sha256 "5dd9d9b4e14d51df45117583fb603b37b550e85c76aa866be5dfef52dcfb4480"
 
       define_method(:install) do
         bin.install "lazyjira"
@@ -19,7 +19,7 @@ class Lazyjira < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/textfuel/lazyjira/releases/download/v2.0.0/lazyjira_darwin_arm64.tar.gz"
-      sha256 "0189550708ee4d3ea4411d52d27193dbd119bbb2ce9f4fdd50b2801cbc2fdc3f"
+      sha256 "740195d0ade58a5cb7475dd471db8a5f529365f002f618ca1aa688014e3c6e56"
 
       define_method(:install) do
         bin.install "lazyjira"
@@ -30,14 +30,14 @@ class Lazyjira < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/textfuel/lazyjira/releases/download/v2.0.0/lazyjira_linux_amd64.tar.gz"
-      sha256 "52ed47c36a60217a9aad69b8ee854734db2097446fa91a8feab6556f6708e22f"
+      sha256 "c86925161d6eda517234cc22cbd3e1fa1e53d706efbc26b4034a32423845b33b"
       define_method(:install) do
         bin.install "lazyjira"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/textfuel/lazyjira/releases/download/v2.0.0/lazyjira_linux_arm64.tar.gz"
-      sha256 "43106be54216f68abb206dd92b4fbadbcbb95a7ea0b8faf778fe0f36caf1e246"
+      sha256 "9b0ad6715f94614a5f835e3f0592498a89e751cc45de847dfa2fe8a0ae64a919"
       define_method(:install) do
         bin.install "lazyjira"
       end
