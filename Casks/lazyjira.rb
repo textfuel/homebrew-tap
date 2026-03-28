@@ -3,7 +3,7 @@ cask "lazyjira" do
   name "lazyjira"
   desc "Terminal UI for Jira"
   homepage "https://github.com/textfuel/lazyjira"
-  version "2.5.0"
+  version "2.5.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "lazyjira" do
   on_macos do
     on_intel do
       url "https://github.com/textfuel/lazyjira/releases/download/v#{version}/lazyjira_darwin_amd64.tar.gz"
-      sha256 "e939450a8b4347fb98d6140614b5c2dc94921dd328efc7c4201160349b3a5d1d"
+      sha256 "781f58374ab15878ee99eca54df5a493e66fa434c2106f04c78003a2d0053bce"
     end
     on_arm do
       url "https://github.com/textfuel/lazyjira/releases/download/v#{version}/lazyjira_darwin_arm64.tar.gz"
-      sha256 "afe8545ceb5e2893ec2c89aa7041f40b517884d376dba0d2b498586fbe2d49f6"
+      sha256 "9aaa5826ea070731417585e28834065d1b8280809a7994fa7e14a6edf0b36be3"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/textfuel/lazyjira/releases/download/v#{version}/lazyjira_linux_amd64.tar.gz"
-      sha256 "3d2c2e1ddbba24386bed7f7ef22da454acbdf83e0719b16117c391a10337a5fb"
+      sha256 "d14befe61300812d83d71694a22476be78311b5680bd83c79238601c873fbebf"
     end
     on_arm do
       url "https://github.com/textfuel/lazyjira/releases/download/v#{version}/lazyjira_linux_arm64.tar.gz"
-      sha256 "dc5bea6ae237c8aafbd7b6260ee9be0366e7f19fa07b831ae65a23b552a2775d"
+      sha256 "d20a4bdb233b95b8040e5a6dfb1e5c367a7e47fa0db139388c57d4ac09f61f6b"
     end
   end
 
