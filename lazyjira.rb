@@ -5,20 +5,20 @@
 class Lazyjira < Formula
   desc "Terminal UI for Jira"
   homepage "https://github.com/textfuel/lazyjira"
-  version "2.10.2"
+  version "2.11.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/textfuel/lazyjira/releases/download/v2.10.2/lazyjira_darwin_amd64.tar.gz"
-      sha256 "26ab5e41f8840c01d0ae89cb5023384593104dfde45f7ca2b0ed9026989f38ac"
+      url "https://github.com/textfuel/lazyjira/releases/download/v2.11.0/lazyjira_darwin_amd64.tar.gz"
+      sha256 "f0cebf65521578b7350de78cd524b7969321438ef92068596f5d159986465aca"
 
       define_method(:install) do
         bin.install "lazyjira"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/textfuel/lazyjira/releases/download/v2.10.2/lazyjira_darwin_arm64.tar.gz"
-      sha256 "d49ddb531e3b2f7effdef53eeab9e16d866c8a8599b5653444c733221962516f"
+      url "https://github.com/textfuel/lazyjira/releases/download/v2.11.0/lazyjira_darwin_arm64.tar.gz"
+      sha256 "1066f8f9b37aaf5f89fa76d1d5ff6ee4cce6af0eaeec8fe554aebc525b4bbfb1"
 
       define_method(:install) do
         bin.install "lazyjira"
@@ -28,15 +28,15 @@ class Lazyjira < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/textfuel/lazyjira/releases/download/v2.10.2/lazyjira_linux_amd64.tar.gz"
-      sha256 "15e394f334f09da020d888fd71db25912b0cd73ff09372324f5c4d99c90597cc"
+      url "https://github.com/textfuel/lazyjira/releases/download/v2.11.0/lazyjira_linux_amd64.tar.gz"
+      sha256 "22a4b8bb1c8321348ea71341b8e51269330ec766ced8aa0de522c4013e23c1a1"
       define_method(:install) do
         bin.install "lazyjira"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/textfuel/lazyjira/releases/download/v2.10.2/lazyjira_linux_arm64.tar.gz"
-      sha256 "96c627cf123ace805af019962dcc75be29cd277b58b25235a595d0dd3357f588"
+      url "https://github.com/textfuel/lazyjira/releases/download/v2.11.0/lazyjira_linux_arm64.tar.gz"
+      sha256 "995130b7a065fb1d72a0baa748a617524df9aaf3b665968a47e1edb9bef85bd7"
       define_method(:install) do
         bin.install "lazyjira"
       end
